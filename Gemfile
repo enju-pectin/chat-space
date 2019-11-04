@@ -61,3 +61,5 @@ gem 'devise'
 group :development do 
      gem 'rspec'
 end
+
+gem 'font-awesome-rails'
