@@ -15,23 +15,19 @@
   .main-header
     .main-header__left-name
       現在のスペース名
-
+      .main-header__member
+        Member :
+        .main-header__member-list
+          test-user
     .main-header__Edit-btn
       Edit
-    .main-header__member
-      .main-header__member-M
-        Member :
-
-      .main-header__member-list
-        test-user
-      
   .messages
     .message
       = render "message"
 
   .form
     %form{:action => "/", :method => ""}
-      %input.send__message{:name => "message", :size => "40",:placeholder => "type a message"}
-    = fa_icon  'image'
-    .form__send-btn
-      Send
+      %input.send__message{:name => "message", :size => "30",:placeholder => "type a message"}
+        = fa_icon  'image'
+      .form__send-btn
+        Send
