@@ -7,14 +7,17 @@
   float: left;
   color: $left-text;
 }
-
+i:before {
+  cursor: pointer;
+}
 .left-header {
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
   line-height: 100px;
-  &__btn--icon {
+  &__btn--icon {  
     float: right;
+    
   }
   &__user {
     display: inline;
@@ -34,7 +37,7 @@ li {
 }
 
 // ----メイン側の画面
-.main {
+.main_chat {
   width: calc(100vw - 300px);
   height: 100%;
   float: right;
@@ -107,4 +110,8 @@ input.send__message {
 }
 p {
   font-size: 16px;
+}
+
+label{
+  // display: none;
 }
