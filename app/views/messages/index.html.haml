@@ -1,16 +1,3 @@
-.left
-  .left-header
-    %p.left-header__user
-      ここにUser名
-      %ul.btn__icon
-        =link_to "#" , class: fa_icon do
-          %li.edit__icon
-            = fa_icon  'edit' 
-        = link_to "#" , class: fa_icon do
-          %li.cog__icon
-            = fa_icon  'cog'
-  .groups
-    = render "groups"
-.main_chat
+.wrapper
+  = render "side_bar"
   = render "main_chat"
-  

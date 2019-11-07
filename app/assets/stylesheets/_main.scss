@@ -2,7 +2,8 @@
 * {
   box-sizing: border-box;
 }
-.left {
+
+.side_bar {
   width: 300px;
   float: left;
   color: $left-text;
@@ -10,7 +11,7 @@
 i:before {
   cursor: pointer;
 }
-.left-header {
+.side_bar-header {
   height: 100px;
   padding: 0 20px;
   background-color: #253141;
@@ -28,6 +29,7 @@ ul {
 }
 li {
   display: inline;
+  color:white;
 }
 
 .groups {
@@ -35,7 +37,18 @@ li {
   background-color: #2f3e51;
   padding-top: 20px;
 }
+.space{
+  margin: 0 20px 40px;
 
+  &__name{
+    font-size:15px;
+    margin:0 0 5px;
+  }
+  &__latest{
+    font-size:11px;
+  }
+
+}
 // ----メイン側の画面
 .main_chat {
   width: calc(100vw - 300px);
@@ -46,11 +59,12 @@ li {
 .main-header {
   height: 100px;
   padding: 0 40px;
-
+  display: flex;
   &__left-name {
+    width: calc(100vw - 340px);
     font-size:20px;
     margin-top:35px;
-    display: inline-block;
+
   }
   &__Edit-btn {
     height: 40px;
@@ -59,7 +73,6 @@ li {
     margin: 28px 0 0;
     padding: 0 20px;
     font-size: 16px;
-    float: right;
     line-height: 40px;
   }
   &__member {
@@ -77,23 +90,25 @@ li {
   padding: 46px 40px 0;
 }
 .form {
+  width: calc(100vw - 300px);
   height: 90px;
   padding: 20px 40px;
   background-color: #dddddd;
   display: inline-block;
-  &__send-btn {
-    width: 100px;
-    height: 50px;
-    background-color: $main-blue;
-    color: white;
-    line-height: 50px;
-    text-align: center;
-    margin-left: 15px;
-    float:right;
-    position: relative;
-    bottom:50px;
-    // right:40px;
-  }
+  
+}
+.submit-btn {
+  width: 100px;
+  height: 50px;
+  background-color: $main-blue;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 15px;
+  float:right;
+  position: relative;
+  bottom:50px;
+  // right:40px;
 }
 .fa.fa-image{
   position: relative;
@@ -108,10 +123,12 @@ input.send__message {
   font-size: 16px;
   padding: 0 40px 0 10px;
 }
+
 p {
   font-size: 16px;
 }
 
-label{
-  // display: none;
+label input{
+  display: none;
+
 }
