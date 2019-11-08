@@ -1,0 +1,13 @@
+.side_bar
+  .side_bar-header
+    %p.side_bar-header__user
+      ここにUser名
+      %ul.btn__icon
+        =link_to "#" , class: fa_icon do
+          %li.edit__icon
+            = fa_icon  'edit' 
+        = link_to "#" , class: fa_icon do
+          %li.cog__icon
+            = fa_icon  'cog'
+  .groups
+    = render "groups"

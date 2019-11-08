@@ -1,0 +1,26 @@
+.message {
+  
+  &__info {
+    margin: 0 0 10px;
+    &__user {
+      font-size: 16px;
+      font: bold;
+      color: $chat-text;
+    }
+    &__timestamp {
+      font-size: 12px;
+      color: $graycolor;
+      margin-left: 10px;
+    }
+
+  }
+  &__text {
+    font-size:14px;
+    color: #434A54;
+    margin: 0 0 40px;
+  }
+}
+
+p{
+  display: inline-block;
+}
