@@ -1,8 +1,7 @@
 .side_bar
   .side_bar-header
     %p.side_bar-header__user
-      仮置き 
-      -# = current_user.name
+      = current_user.nickname
       %ul.btn__icon
         %li.list
           =link_to "#"  do
