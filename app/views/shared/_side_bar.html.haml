@@ -1,0 +1,19 @@
+.side_bar
+  .side_bar-header
+    %p.side_bar-header__user
+      = current_user.nickname
+      %ul.btn__icon
+        %li.list
+        = link_to new_group_path do
+          = fa_icon  'edit' , class: 'fa_icon'
+        %li.list
+        = link_to edit_user_password_path(current_user) do
+          = fa_icon 'cog', class: 'fa_icon'
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to  group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__latest
+            メッセージはまだありません。

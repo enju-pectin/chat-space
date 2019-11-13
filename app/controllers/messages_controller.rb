@@ -5,9 +5,6 @@ class MessagesController < ApplicationController
   
   end
 
-  def require_login
-
-  end
 
   
 end
