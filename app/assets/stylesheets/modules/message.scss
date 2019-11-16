@@ -1,6 +1,7 @@
 .message {
   
   &__info {
+    display: flex;
     margin: 0 0 10px;
     &__user {
       font-size: 16px;
@@ -17,10 +18,8 @@
   &__text {
     font-size:14px;
     color: #434A54;
-    margin: 0 0 40px;
+    &__content{
+      margin: 0 0 40px;
+    }
   }
-}
-
-p{
-  display: inline-block;
 }

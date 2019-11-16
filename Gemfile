@@ -56,6 +56,8 @@ gem 'haml-rails'
 
   #いずれの環境でも必要
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 
    #開発環境にのみ必要
 group :development do 
