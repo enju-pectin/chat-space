@@ -5,17 +5,20 @@
       .main-header__member
         Member :
         .main-header__member-list
-          -# - @members.user.id each do |user|
-          -#   = user
+          未実装
+          -# - @members.each do |member|
+          -#   member.user
     .main-header__Edit-btn
-      Edit
+      = link_to edit_group_path(@group) do
+        Edit
+        -#   %input type: 'submit' ,value:'Edit',class: 'button'
   .messages
     = render @messages
   .form
     = form_for [@group, @message] do |f|
       = f.text_field :message, class: 'send__message', placeholder: 'type a message'
       .form__space
-        = f.label :image ,class: 'input-box__image' do
+        = f.label :image  do
           = fa_icon'image', class: 'icon'
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'submit-btn'

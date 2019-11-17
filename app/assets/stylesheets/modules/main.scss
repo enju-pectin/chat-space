@@ -22,6 +22,10 @@
     padding: 0 20px;
     font-size: 16px;
     line-height: 40px;
+    a{    
+      color: $main-blue;
+      text-decoration: none;
+    }
   }
   &__member {
     font-size: 12px;
@@ -32,17 +36,22 @@
     }
   }
 }
+
 .messages {
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 46px 40px 0;
 }
-form {
+
+.form {
   width: calc(100vw - 300px);
   height: 90px;
   padding: 20px 40px;
   background-color: #dddddd;
-  display: flex;
+ 
+}
+#new_message{
+ display: flex;
 }
 
 .submit-btn {
@@ -82,6 +91,6 @@ p {
   font-size: 16px;
 }
 
-label input {
+.hidden {
   display: none;
 }

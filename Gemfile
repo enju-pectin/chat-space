@@ -61,7 +61,10 @@ gem 'mini_magick'
 
    #開発環境にのみ必要
 group :development do 
-     gem 'rspec'
+    gem 'rspec'
+    gem 'pry-rails'
+    gem 'pry-byebug'
+    gem 'pry-doc'
 end
 
 gem 'font-awesome-rails'
