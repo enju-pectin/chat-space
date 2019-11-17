@@ -22,6 +22,10 @@
     padding: 0 20px;
     font-size: 16px;
     line-height: 40px;
+    a{    
+      color: $main-blue;
+      text-decoration: none;
+    }
   }
   &__member {
     font-size: 12px;
@@ -32,18 +36,24 @@
     }
   }
 }
+
 .messages {
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 46px 40px 0;
 }
+
 .form {
   width: calc(100vw - 300px);
   height: 90px;
   padding: 20px 40px;
   background-color: #dddddd;
-  display: inline-block;
+ 
 }
+#new_message{
+ display: flex;
+}
+
 .submit-btn {
   width: 100px;
   height: 50px;
@@ -51,20 +61,27 @@
   color: white;
   line-height: 50px;
   text-align: center;
-  margin-left: 15px;
-  float: right;
-  position: relative;
-  bottom: 50px;
 }
+
 .fa.fa-image {
+  line-height: 50px;
+  z-index: 1;
   position: relative;
   right: 35px;
   font-size: 20px;
 }
+
 .send__message {
+  z-index: 1;
   height: 50px;
-  width: 90%;
+  width: calc(100vw - 300px - 100px - 40px - 15px )
 }
+
+.form__space{
+  width:15px;
+  height: 50px;
+}
+
 input.send__message {
   font-size: 16px;
   padding: 0 40px 0 10px;
@@ -74,6 +91,6 @@ p {
   font-size: 16px;
 }
 
-label input {
+.hidden {
   display: none;
 }
