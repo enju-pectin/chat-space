@@ -5,13 +5,11 @@
       .main-header__member
         Member :
         .main-header__member-list
-          未実装
-          -# - @members.each do |member|
-          -#   member.user
+          - @members.each do |member|
+            = member.nickname
     .main-header__Edit-btn
       = link_to edit_group_path(@group) do
         Edit
-        -#   %input type: 'submit' ,value:'Edit',class: 'button'
   .messages
     = render @messages
   .form
@@ -22,4 +20,3 @@
           = fa_icon'image', class: 'icon'
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'submit-btn'
-
