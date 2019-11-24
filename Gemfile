@@ -43,7 +43,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
 end
-
+#開発環境
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
@@ -51,6 +51,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rspec'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -58,17 +62,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails'
 
-  #いずれの環境でも必要
+#いずれの環境でも必要
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'font-awesome-rails'
-
-   #開発環境にのみ必要
-group :development do 
-    gem 'rspec'
-    gem 'pry-rails'
-    gem 'pry-byebug'
-    gem 'pry-doc'
-end
-
