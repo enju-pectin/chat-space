@@ -1,40 +1,20 @@
 $(function(){
   function buildHTML(message){
-    if (message.image.url != null) {
-      var html = `
-      <div class="message">
+    var html = `
+    <div class="message">
       <div class="message__info">
-      <p class="message__info__user">
-      ${message.nickname}
-      </p><span></span><p class="message__info__timestamp">
-      ${message.created_at}
-      </p>
+        <p class="message__info__user">
+          ${message.nickname}
+        </p><span></span>
+        <p class="message__info__timestamp">
+          ${message.created_at}
+        </p>
       </div>
-      <p class="message__text">
-      </p><p class="message__text__content">
-      ${message.message}
-      </p>
-      <img class="message__text__image" src="${message.image.url}" alt="" width="400px" height="400px">
-      <p></p>
-      </div>`
-    } else {
-      var html = `
-      <div class="message">
-      <div class="message__info">
-      <p class="message__info__user">
-      ${message.nickname}
-      </p><span></span><p class="message__info__timestamp">
-      ${message.created_at}
-      </p>
-      </div>
-      <p class="message__text">
-      </p>
-      <p class="message__text__content">
-      ${message.message}
-      </p> 
-      <p></p>
-      </div>`
-    }
+        <p class="message__text">
+        ${message.message}
+        </p>
+      <img class="message__text__image" src="${message.url}" alt="" width="400px" height="400px">
+    </div>`
     return html
   }
 
