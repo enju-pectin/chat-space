@@ -55,7 +55,7 @@ $(function(){
       alert("ユーザ検索に失敗しました");
     });
   })
-  $(document).on('click','.chat-group-user__btn--add', function(){f
+  $(document).on('click','.chat-group-user__btn--add', function(){
     const userName = $(this).attr("data-user-name");
     const userId = $(this).attr("data-user-id");
     $(this)
