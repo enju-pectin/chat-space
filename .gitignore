@@ -19,3 +19,4 @@
 public/uploads/*
 app/assets/stylesheets/.DS_Store
 app/views/messages/.DS_Store
+config/secrets.yml
